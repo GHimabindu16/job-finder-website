@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobStart - Find Your First Job</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h2>JobStart</h2>
+    <nav>
+      <button id="homeBtn">Home</button>
+      <button id="savedBtn">Saved Jobs</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Find Your First Job</h1>
+    <p>Discover opportunities and start your career.</p>
+
+    <form id="searchForm" class="search-box">
+      <input id="keyword" placeholder="Job title or company">
+      <input id="location" placeholder="Location">
+      <button type="submit">Search Jobs</button>
+    </form>
+  </section>
+
+  <main class="container">
+    <div class="list-heading">
+      <h2 id="listTitle">Latest Jobs</h2>
+      <select id="category">
+        <option value="All">All Categories</option>
+        <option value="IT">IT</option>
+        <option value="Non-IT">Non-IT</option>
+        <option value="Internship">Internship</option>
+      </select>
+    </div>
+
+    <p id="count"></p>
+    <section id="jobList" class="job-list"></section>
+  </main>
+
+  <footer>
+    <p>JobStart © 2026 | Mini Project for Freshers</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
